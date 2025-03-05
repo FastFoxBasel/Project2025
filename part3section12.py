@@ -109,6 +109,8 @@ def plot_comparisons(all_metrics):
     plt.title('Flow Size Comparison (Number of Packets)', pad=20)  # Add padding to the title
     plt.xlabel('Activity')
     plt.ylabel('Packets')
+    plt.xticks(rotation=45, ha='right', fontsize=10)
+
 
     # Plot flow volume comparison
     plt.subplot(3, 2, 5)
@@ -117,6 +119,8 @@ def plot_comparisons(all_metrics):
     plt.title('Flow Volume Comparison (Total Bytes)', pad=20)  # Add padding to the title
     plt.xlabel('Activity')
     plt.ylabel('Bytes')
+    plt.xticks(rotation=45, ha='right', fontsize=10)
+
 
     # Adjust layout to prevent overlap
     plt.subplots_adjust(hspace=0.652, wspace=0.41)  # Set custom spacing
