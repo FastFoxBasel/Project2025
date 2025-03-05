@@ -1,0 +1,91 @@
+for the part3.py file:
+Network Activity Analysis and Visualization
+Description
+This Python script reads and analyzes network traffic data from multiple .pcap files, calculating various metrics such as throughput, packets per second (PPS), inter-arrival times, flow size, and flow volume. These metrics are visualized through a series of comparison graphs using matplotlib. The code helps to analyze network activity for different activities such as web-surfing, audio streaming, video streaming, and video conferencing.
+
+Prerequisites
+The script requires the following Python libraries:
+
+scapy for reading .pcap files and packet analysis.
+pandas for handling and processing the packet data.
+matplotlib for generating the comparison plots.
+You can install these dependencies using pip:
+pip install scapy pandas matplotlib seaborn numpy
+Usage
+Step 1: Prepare .pcap files
+
+Make sure you have the .pcap files for each activity you wish to analyze, the script expects .pcap files.
+Web-surfing 1
+Web-surfing 2
+Audio streaming
+Video streaming
+Video conferencing
+Each .pcap file should contain network traffic data for each one of these activities accordingly.
+
+Step 2: Running the Script
+Clone or download this repository and navigate to the folder where the script is located.
+Run the script in your terminal:
+python3 part3.py
+You will be prompted to enter the file paths for each activity's .pcap file (e.g., Web-surfing 1, Web-surfing 2, etc.). Enter the path to the respective .pcap files.
+
+The script will load the data from the .pcap files, analyze the metrics, and display comparison plots for:
+
+Throughput (bytes per second)
+Packets per second (PPS)
+Inter-arrival times (time between consecutive packets)
+Flow size (number of packets)
+Flow volume (total bytes transmitted)
+Step 3: Output
+Once the script has finished processing the .pcap files, it will display a series of comparison plots:
+
+Throughput Comparison (bytes/s)
+Packets per Second (PPS) Comparison
+Packet Inter-arrival Times Comparison
+Flow Size Comparison (Number of Packets)
+Flow Volume Comparison (Total Bytes)
+These plots allow you to visually compare the network activity across different types of usage (e.g., web surfing vs. video conferencing).
+
+
+for the part3section4.py file:
+Network Traffic Analysis and Visualization
+Overview
+This Python project analyzes network traffic captured from multiple .pcap files. It provides an in-depth analysis of various network metrics, including packet size distributions, inter-arrival times, and unique flows for different applications. The data is visualized using histograms and kernel density estimates (KDE), helping to compare network behaviors across multiple activities like web surfing, audio streaming, video streaming, and video conferencing.
+
+Features
+Flow Analysis: Analyzes the number of unique flows, total packets, and total bytes for each activity.
+Packet Size Distribution: Visualizes the distribution of packet sizes.
+Inter-arrival Time Distribution: Visualizes the time between the arrival of consecutive packets.
+Multiple PCAP Files: Compares network traffic across multiple .pcap files representing different activities.
+Requirements
+This project requires the following Python libraries:
+
+scapy: For reading and processing .pcap files.
+pandas: For handling and processing data.
+matplotlib: For plotting the visualizations.
+seaborn: For enhanced visualizations like KDE plots.
+numpy: For numerical calculations.
+You can install these dependencies via pip:
+pip install scapy pandas matplotlib seaborn numpy
+
+Running the Code:
+Prepare .pcap files: Ensure you have the .pcap files for each activity you want to analyze. The script expects the following activities:
+
+Web-surfing 1
+Web-surfing 2
+Audio Streaming
+Video Streaming
+Video Conferencing
+Run the Script:
+
+Clone or download the project files.
+Open a terminal and navigate to the project folder.
+Run the script by executing the following command:
+
+python analyze_network_traffic.py
+Input PCAP File Paths: You will be prompted to enter the path for each .pcap file, enter the full path of the file for each corresponding activity.
+
+Results: The script will process the .pcap files, perform the analysis, and display visualizations comparing:
+
+Packet size distributions.
+Inter-arrival time distributions.
+Additionally, it will print a summary of unique flows, total packets, and total bytes for each activity.
